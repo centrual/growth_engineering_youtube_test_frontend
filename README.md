@@ -1,3 +1,43 @@
+# Growth Engineering Youtube Test
+
+Hello Growth Engineering 🖐
+
+This project demonstrates the front end of the youtube test.
+
+---
+
+## Getting Started
+
+This project needs [Node.js](https://nodejs.org/en/) version 14 or 16.
+
+---
+
+## Project Structure
+
+Because the API key sharing is insecure I split the project into 3 parts. This parts are:
+
+1. Frontend *
+2. [OpenAPI Declarations](https://github.com/centrual/growth_engineering_youtube_test_openapi)
+3. [Backend](https://github.com/centrual/growth_engineering_youtube_test_server)
+
+---
+
+## Used Technologies
+
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* CSS modules are used for the styling of components.
+* Atomic design methodology was used to keep the components in order.
+
+
+
+
+
+Youtube playlist template taken from [this url](https://gitu.net/en/details/youtube-playlist-template-freebie) and reconstructed with Adobe XD.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
