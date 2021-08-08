@@ -18,7 +18,7 @@ Lastly we need [personal access token on github](https://docs.github.com/en/gith
 
 If everything ready, let's start!
 
-Cloning the project:
+Please clone the project from CLI tool ( terminal | command prompt | powershell etc. ):
 
 ```
 git clone https://github.com/centrual/growth_engineering_youtube_test_frontend.git
@@ -38,26 +38,44 @@ then start the project with:
 
 If web browser isn't automatically opened then open the web browser and go to `http://localhost:3000`.
 
-Ta Da 🎉, wunderbar! 🎊 You can use the application now...
+🎉 Wunderbar! 🎊
+
+You can use the application now...
+
+---
+
+## Deployment instructions
+
+If you want to see website on `dev.geyt.ml` then just push updated code to `dev` branch on git repository. Or if you want to see website on `geyt.ml` or `www.geyt.ml` then push updated code to `staging` branch on git repository.
+
+If you want to deploy the project elsewhere, build the project with `npm run build` or `yarn build` command then deploy content of `build` directory via FTP or another transfer tool.
 
 ---
 
 ## Used Packages
 
-1. [react-image](https://github.com/mbrevda/react-image) for image replacement when image not available.
-2. [react-player](https://github.com/CookPete/react-player) to display videos from youtube.
-3. [moment-timezone](https://github.com/moment/moment-timezone/) to parse dates and times.
-4. [react-moment](https://github.com/headzoo/react-moment) to show formatted video upload date like "4 hours ago".
-5. [react-number-format](https://www.npmjs.com/package/react-number-format) to show formatted view count like "12.567 views".
-6. [react-lottie](https://github.com/chenqingspring/react-lottie) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
-7. [react-virtualized](https://github.com/bvaughn/react-virtualized) to make playlist items scrollable without throttle.
-8. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
-   1. @fortawesome/fontawesome-svg-core
-   2. @fortawesome/free-regular-svg-icons
-   3. @fortawesome/free-solid-svg-icons
-   4. @fortawesome/react-fontawesome
+1. [react-router-dom](https://github.com/ReactTraining/react-router) for application navigation.
+2. [react-image](https://github.com/mbrevda/react-image) for image replacement when image not available.
+3. [react-player](https://github.com/CookPete/react-player) to display videos from youtube.
+4. [moment-timezone](https://github.com/moment/moment-timezone/) to parse dates and times.
+5. [react-moment](https://github.com/headzoo/react-moment) to show formatted video upload date like "4 hours ago".
+6. [react-number-format](https://www.npmjs.com/package/react-number-format) to show formatted view count like "12.567 views".
+7. [react-lottie](https://github.com/chenqingspring/react-lottie) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
+8. [react-virtualized](https://github.com/bvaughn/react-virtualized) to make playlist items scrollable without throttle.
+9. [react-js-loader](https://github.com/AmurKhoyetsyan/react-js-loader) for nice loader animations.
+10. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
+    1. @fortawesome/fontawesome-svg-core
+    2. @fortawesome/free-regular-svg-icons
+    3. @fortawesome/free-solid-svg-icons
+    4. @fortawesome/react-fontawesome
 
 Thanks to [undraw](https://undraw.co/illustrations) for blank canvas image.
+
+---
+
+## Fonts
+
+1. [Poppins](https://fonts.google.com/specimen/Poppins)
 
 ---
 
