@@ -10,6 +10,41 @@ This project demonstrates the front end of the youtube test.
 
 This project needs [Node.js](https://nodejs.org/en/) version 14 or 16.
 
+> I using [yarn package manager](https://yarnpkg.com/). If you don't want to use yarn please delete `yarn.lock` file before install command.
+
+We need to [Git](https://git-scm.com/downloads) to clone the repository.
+
+Lastly we need [personal access token on github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to clone the repository. `repo` scope is enough to clone this private repository. Please copy your generated personal access token in safe, we will use it in the next steps.
+
+If everything ready, let's start!
+
+```
+git clone https://github.com/centrual/growth_engineering_youtube_test_frontend.git
+```
+
+This command can ask your credentials. Please use your `Github username` as username and `personal access key` as password.
+
+Then you are ready to use this project! Wunderbar! 🎊
+
+---
+
+## Used Packages
+
+1. [react-image](https://github.com/mbrevda/react-image) for image replacement when image not available.
+2. [react-player](https://github.com/CookPete/react-player) to display videos from youtube.
+3. [moment-timezone](https://github.com/moment/moment-timezone/) to parse dates and times.
+4. [react-moment](https://github.com/headzoo/react-moment) to show formatted video upload date like "4 hours ago".
+5. [react-number-format](https://www.npmjs.com/package/react-number-format) to show formatted view count like "12.567 views".
+6. [react-lottie](https://github.com/chenqingspring/react-lottie) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
+7. [react-virtualized](https://github.com/bvaughn/react-virtualized) to make playlist items scrollable without throttle.
+8. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
+   1. @fortawesome/fontawesome-svg-core
+   2. @fortawesome/free-regular-svg-icons
+   3. @fortawesome/free-solid-svg-icons
+   4. @fortawesome/react-fontawesome
+
+Thanks to [undraw](https://undraw.co/illustrations) for blank canvas image.
+
 ---
 
 ## Project Structure
@@ -28,11 +63,7 @@ Because the API key sharing is insecure I split the project into 3 parts. This p
 * CSS modules are used for the styling of components.
 * Atomic design methodology was used to keep the components in order.
 
-
-
-
-
-Youtube playlist template taken from [this url](https://gitu.net/en/details/youtube-playlist-template-freebie) and reconstructed with Adobe XD.
+I made very simple youtube playlist template with Adobe XD.
 
 
 
