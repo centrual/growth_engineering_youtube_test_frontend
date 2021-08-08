@@ -18,13 +18,27 @@ Lastly we need [personal access token on github](https://docs.github.com/en/gith
 
 If everything ready, let's start!
 
+Cloning the project:
+
 ```
 git clone https://github.com/centrual/growth_engineering_youtube_test_frontend.git
 ```
 
-This command can ask your credentials. Please use your `Github username` as username and `personal access key` as password.
+> This command can ask your credentials. Please use your `Github username` as username and `personal access key` as password.
 
-Then you are ready to use this project! Wunderbar! 🎊
+Then you are ready to use this project!
+
+Install the dependencies with:
+
+`npm i` or `yarn install`
+
+then start the project with:
+
+`npm run start` or `yarn start`
+
+If web browser isn't automatically opened then open the web browser and go to `http://localhost:3000`.
+
+Ta Da 🎉, wunderbar! 🎊 You can use the application now...
 
 ---
 
@@ -64,14 +78,6 @@ Because the API key sharing is insecure I split the project into 3 parts. This p
 * Atomic design methodology was used to keep the components in order.
 
 I made very simple youtube playlist template with Adobe XD.
-
-
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
