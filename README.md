@@ -63,7 +63,8 @@ If you want to deploy the project elsewhere, build the project with `npm run bui
 7. [react-lottie](https://github.com/chenqingspring/react-lottie) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
 8. [react-virtualized](https://github.com/bvaughn/react-virtualized) to make playlist items scrollable without throttle.
 9. [react-js-loader](https://github.com/AmurKhoyetsyan/react-js-loader) for nice loader animations.
-10. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
+10. [classnames](https://github.com/JedWatson/classnames) to conditionally joining classNames together easily.
+11. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
     1. @fortawesome/fontawesome-svg-core
     2. @fortawesome/free-regular-svg-icons
     3. @fortawesome/free-solid-svg-icons
