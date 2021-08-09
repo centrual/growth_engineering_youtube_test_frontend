@@ -1,10 +1,14 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
 function App(): JSX.Element {
   return (
-    <div>
-      Hello Growth Engineering 🖐
-    </div>
+    <>
+      <div>
+        Hello Growth Engineering 🖐
+      </div>
+      <ToastContainer />
+    </>
   );
 }
 

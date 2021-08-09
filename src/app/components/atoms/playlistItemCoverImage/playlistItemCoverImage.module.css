@@ -1,0 +1,15 @@
+.playlistItemCoverImage {
+  width: 18rem;
+  height: 10.125rem;
+  line-height: 0;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.playlistItemCoverImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 10.125rem;
+}

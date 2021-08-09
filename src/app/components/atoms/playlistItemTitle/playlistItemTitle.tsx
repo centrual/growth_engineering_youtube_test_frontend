@@ -1,7 +1,7 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 import Styles from './playlistItemTitle.module.css';
 
-const PlaylistItemTitle: FC<PropsWithChildren<unknown>> = (props) => {
+const PlaylistItemTitle: FC = (props) => {
   const { children } = props;
 
   return (

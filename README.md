@@ -62,9 +62,12 @@ If you want to deploy the project elsewhere, build the project with `npm run bui
 6. [react-number-format](https://www.npmjs.com/package/react-number-format) to show formatted view count like "12.567 views".
 7. [react-lottie](https://github.com/chenqingspring/react-lottie) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
 8. [react-virtualized](https://github.com/bvaughn/react-virtualized) to make playlist items scrollable without throttle.
-9. [react-js-loader](https://github.com/AmurKhoyetsyan/react-js-loader) for nice loader animations.
+9. [react-loader-spinner](https://github.com/mhnpd/react-loader-spinner) for nice loader animations.
 10. [classnames](https://github.com/JedWatson/classnames) to conditionally joining classNames together easily.
-11. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
+11. [@centrual/geyt_api_client](https://github.com/centrual/growth_engineering_youtube_test_openapi/packages/930634) to query server. Generated via [openapi-generator](https://openapi-generator.tech/). It uses [axios](https://github.com/axios/axios) as http client.
+12. [axios](https://github.com/axios/axios) to intercept http responses.
+13. [react-toastify](https://github.com/fkhadra/react-toastify) to show shiny toast notifications.
+14. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
     1. @fortawesome/fontawesome-svg-core
     2. @fortawesome/free-regular-svg-icons
     3. @fortawesome/free-solid-svg-icons
