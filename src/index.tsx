@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './app/app';
 import reportWebVitals from './reportWebVitals';
 
+import './assets/styles/fonts.css';
+import './assets/styles/colors.css';
+import './assets/styles/global.css';
+
 const rootElement = document.querySelector('#root');
 
 if (!rootElement) {
