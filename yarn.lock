@@ -1324,10 +1324,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@centrual/geyt_api_client@^1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@centrual/geyt_api_client/1.0.1/62deaf041b907f9daea92bbee4291be18faefdc78a28afd6ce757dbc2efaac82#e86ec2540c4bb3cce40374df89534daf8b8ee8ed"
-  integrity sha512-uySnmKkseCNR5Jw126YozptLtcs8I1187IQaCsPmeV5MAlLSb1lAGzKEFza7jG6HeKMCHJ6SF5fT2uPDwaGHfQ==
+"@centrual/geyt_api_client@^1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@centrual/geyt_api_client/1.0.2/c936ed9fb729ff1208464da7696b54a71feaafb557dc47430330a3efd21202f1#27ba4779191e5ab14884873acca6b774305076a5"
+  integrity sha512-zO7bI6QCV1BLUGZFnIbsSZQtt5K3ugoNK6MN5CnrKfDsz0EvFPOVovH09zazENVDtFVMII14G53vOPqBsH7msg==
   dependencies:
     axios "^0.21.1"
 

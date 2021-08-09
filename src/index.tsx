@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './app/app';
 import reportWebVitals from './reportWebVitals';
 
+import 'react-virtualized/styles.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import 'react-toastify/dist/ReactToastify.css';
 

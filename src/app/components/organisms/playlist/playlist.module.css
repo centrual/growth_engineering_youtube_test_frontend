@@ -1,0 +1,27 @@
+.playlist {
+  position: fixed;
+  height: 19rem;
+  left: 0;
+  bottom: -19rem;
+  right: 0;
+  background: var(--color-white);
+  transition: bottom 300ms ease-out;
+}
+
+.playlistOpened {
+  bottom: 0;
+}
+
+.toggleButtonWrapper {
+  width: 5.25rem;
+  height: 5.25rem;
+  position: fixed;
+  left: 50%;
+  margin-left: -2.625rem;
+  bottom: 1rem;
+  transition: bottom 300ms ease-out;
+}
+
+.playlistOpened .toggleButtonWrapper {
+  bottom: 20rem;
+}

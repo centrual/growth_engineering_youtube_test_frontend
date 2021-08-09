@@ -13,6 +13,7 @@ const PlaylistItem = memo<PlaylistItemProps>((props) => {
     active,
     onClick,
     className,
+    style,
   } = props;
 
   const onClickHandler = (): void => {
@@ -27,6 +28,7 @@ const PlaylistItem = memo<PlaylistItemProps>((props) => {
 
   return (
     <div
+      style={style}
       data-testid="playlistItem"
       onClick={onClickHandler}
       onKeyPress={onKeyPress}
