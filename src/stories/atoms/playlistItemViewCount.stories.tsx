@@ -8,6 +8,9 @@ export default {
   argTypes: {
     viewCount: { name: 'View Count', type: 'number' },
   },
+  args: {
+    viewCount: 1000000,
+  },
 } as ComponentMeta<typeof PlaylistItemViewCount>;
 
 const Template: ComponentStory<typeof PlaylistItemViewCount> = (args) => {
@@ -19,6 +22,3 @@ const Template: ComponentStory<typeof PlaylistItemViewCount> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {
-  viewCount: 1000000,
-};

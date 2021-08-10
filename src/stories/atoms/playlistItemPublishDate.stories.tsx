@@ -8,6 +8,9 @@ export default {
   argTypes: {
     publishDate: { name: 'Publish Date', type: 'string' },
   },
+  args: {
+    publishDate: '2021-02-09T11:04:55Z',
+  },
 } as ComponentMeta<typeof PlaylistItemPublishDate>;
 
 const Template: ComponentStory<typeof PlaylistItemPublishDate> = (args) => {
@@ -19,6 +22,3 @@ const Template: ComponentStory<typeof PlaylistItemPublishDate> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {
-  publishDate: '2021-02-09T11:04:55Z',
-};

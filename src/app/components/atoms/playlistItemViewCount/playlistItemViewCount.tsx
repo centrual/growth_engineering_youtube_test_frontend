@@ -19,7 +19,14 @@ const PlaylistItemViewCount: FC<PlaylistItemViewCountProps> = (props) => {
   return (
     <span className={Styles.playlistItemViewCountRoot}>
       <FontAwesomeIcon icon={faEye} className={Styles.playlistItemViewCountIcon} size="xs" />
-      <NumberFormat value={computedViewCount} displayType="text" thousandSeparator="." decimalSeparator="," suffix=" views" className={Styles.playlistItemViewCountText} />
+      <NumberFormat
+        value={computedViewCount}
+        displayType="text"
+        thousandSeparator="."
+        decimalSeparator=","
+        suffix=" views"
+        className={Styles.playlistItemViewCountText}
+      />
     </span>
   );
 };

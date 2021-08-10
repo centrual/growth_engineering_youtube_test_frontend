@@ -6,7 +6,7 @@ import Styles from './playlistToggleButton.module.css';
 import { PlaylistToggleButtonProps } from './playlistToggleButton.types';
 
 const PlaylistToggleButton: FC<PlaylistToggleButtonProps> = (props) => {
-  const { toggled, onClick } = props;
+  const { toggled, onClick, className } = props;
 
   const onClickHandler = (): void => {
     onClick?.(!!toggled);
@@ -17,7 +17,7 @@ const PlaylistToggleButton: FC<PlaylistToggleButtonProps> = (props) => {
       data-testid="playlistToggleButton"
       type="button"
       onClick={onClickHandler}
-      className={classNames(Styles.playlistToggleButton, { [Styles.playlistToggleButtonToggled]: toggled })}
+      className={classNames(Styles.playlistToggleButton, { [Styles.playlistToggleButtonToggled]: toggled }, className)}
     >
       <FontAwesomeIcon icon={faChevronUp} size="2x" />
     </button>

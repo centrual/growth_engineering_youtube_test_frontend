@@ -9,6 +9,9 @@ export default {
   argTypes: {
     children: { defaultValue: 'Test title', name: 'Label' },
   },
+  args: {
+    children: 'Hello Growth Engineering 🖐',
+  },
 } as ComponentMeta<typeof PlaylistItemTitle>;
 
 const Template: ComponentStory<typeof PlaylistItemTitle> = (args) => {
@@ -22,6 +25,3 @@ const Template: ComponentStory<typeof PlaylistItemTitle> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {
-  children: 'Hello Growth Engineering 🖐',
-};

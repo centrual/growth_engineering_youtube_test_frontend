@@ -6,29 +6,9 @@ import Playlist from '../../app/components/organisms/playlist/playlist';
 export default {
   title: 'Organisms/Playlist',
   component: Playlist,
-  argTypes: {
-    playlist: { name: 'Playlist' },
-    opened: { name: 'Is Open', type: 'boolean' },
-  },
-} as ComponentMeta<typeof Playlist>;
-
-const Template: ComponentStory<typeof Playlist> = (args) => {
-  const { playlist, opened } = args;
-
-  return (
-    <Playlist playlist={playlist} opened={opened} />
-  );
-};
-
-export const Default = Template.bind({});
-Default.args = {
-  opened: false,
-  playlist: {
-    playlistInfo: {
-      resultsPerPage: 20,
-      totalRecords: 150,
-    },
-    videoInfo: new Array<VideoInfo>(150).fill({
+  args: {
+    opened: false,
+    playlist: new Array<VideoInfo>(150).fill({
       videoId: 'k-O-BH9GN-4',
       viewCount: 123321,
       likeCount: 21213,
@@ -65,5 +45,51 @@ Default.args = {
         },
       },
     }),
+    activeVideoId: '',
+    isLoadingMoreItems: false,
+    isMoreItemsAvailable: true,
   },
+  argTypes: {
+    playlist: { name: 'Playlist' },
+    opened: { name: 'Is Open', type: 'boolean' },
+    activeVideoId: { name: 'Selected Video Id' },
+    isLoadingMoreItems: { name: 'Is Loading More Items', type: 'boolean' },
+    isMoreItemsAvailable: { name: 'Is More Items Available', type: 'boolean' },
+    onVideoItemClicked: { name: 'On Clicked To Playlist Item' },
+    onTogglePlaylistButtonClicked: { name: 'On Clicked To Toggle Button' },
+    onScrolledToEnd: { name: 'On Playlist Scrolled To End' },
+  },
+} as ComponentMeta<typeof Playlist>;
+
+const Template: ComponentStory<typeof Playlist> = (args) => {
+  const {
+    playlist,
+    opened,
+    isLoadingMoreItems,
+    isMoreItemsAvailable,
+    onScrolledToEnd,
+    onTogglePlaylistButtonClicked,
+    onVideoItemClicked,
+    activeVideoId,
+  } = args;
+
+  return (
+    <Playlist
+      playlist={playlist}
+      opened={opened}
+      activeVideoId={activeVideoId}
+      isLoadingMoreItems={isLoadingMoreItems}
+      isMoreItemsAvailable={isMoreItemsAvailable}
+      onVideoItemClicked={onVideoItemClicked}
+      onTogglePlaylistButtonClicked={onTogglePlaylistButtonClicked}
+      onScrolledToEnd={onScrolledToEnd}
+    />
+  );
+};
+
+export const Default = Template.bind({});
+export const Empty = Template.bind({});
+Empty.args = {
+  opened: true,
+  playlist: [],
 };

@@ -8,6 +8,9 @@ export default {
   argTypes: {
     toggled: { name: 'Is Toggled', type: 'boolean' },
   },
+  args: {
+    toggled: false,
+  },
 } as ComponentMeta<typeof PlaylistToggleButton>;
 
 const Template: ComponentStory<typeof PlaylistToggleButton> = (args) => {
@@ -19,6 +22,3 @@ const Template: ComponentStory<typeof PlaylistToggleButton> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {
-  toggled: false,
-};
