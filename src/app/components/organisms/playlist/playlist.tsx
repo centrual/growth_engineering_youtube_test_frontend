@@ -73,7 +73,7 @@ const Playlist = memo<PlaylistProps>((props) => {
   };
 
   const renderLoader = (): JSX.Element | null => {
-    if (!isLoadingMoreItems || !isMoreItemsAvailable) {
+    if (!isLoadingMoreItems && !isMoreItemsAvailable) {
       return null;
     }
 

@@ -9,8 +9,8 @@
 
 .errorTemplateImageArea > * {
   width: 100%;
-  max-width: 30vw;
-  max-height: 30vw;
+  max-width: 40vw;
+  max-height: 40vw;
 }
 
 .errorTemplateCode {
