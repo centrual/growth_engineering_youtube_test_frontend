@@ -1,44 +1,50 @@
 import React, {
-  FC, useCallback, useEffect, useState,
+  FC, useEffect, useState,
 } from 'react';
 import { VideoInfo } from '@centrual/geyt_api_client';
-import ReactDOM from 'react-dom';
 import { useHistory } from 'react-router-dom';
+import ReactPlayer from 'react-player/youtube';
+import { useWindowSize } from 'rooks';
 import Playlist from '../../organisms/playlist/playlist';
 import { YoutubeApi } from '../../../../services/apiService';
+import Config from '../../../../config';
 
 const PlaylistPage: FC = () => {
   const history = useHistory();
+  const { innerWidth, innerHeight } = useWindowSize();
 
   const [playlistId] = useState('UUTI5S0PqpgB0DbYgcgRU6QQ');
   const [playlistItems, setPlaylistItems] = useState<VideoInfo[]>([]);
   const [nextPageToken, setNextPageToken] = useState('');
-  const [isLoadingNextPage, setNextPageLoadState] = useState(false);
+  const [isLoadingNextPage, setNextPageLoadState] = useState(true);
   const [isPlaylistOpen, setPlaylistOpenState] = useState(false);
   const [activeVideoId, setActiveVideoId] = useState('');
 
-  const loadNextPage = useCallback(async (): Promise<void> => {
-    ReactDOM.flushSync(() => {
-      setNextPageLoadState(true);
-    });
+  const loadNextPage = async (): Promise<void> => {
+    setNextPageLoadState(true);
 
     try {
       const { data } = await YoutubeApi.getPlaylist(playlistId, nextPageToken);
 
       setNextPageToken(data.playlistInfo.nextPageToken ?? '');
-      setPlaylistItems(data.videoInfo);
+      setPlaylistItems([...playlistItems, ...data.videoInfo]);
+
+      if (activeVideoId === '') {
+        setActiveVideoId(data.videoInfo[0].videoId);
+      }
       setNextPageLoadState(false);
     } catch (e) {
       setNextPageLoadState(false);
       history.push('/500');
     }
-  }, [history, nextPageToken, playlistId]);
+  };
 
   useEffect(() => {
     (async () => {
       await loadNextPage();
     })();
-  }, [loadNextPage]);
+    // eslint-disable-next-line
+  }, []);
 
   const onPlaylistReachedToEnd = async (): Promise<void> => {
     await loadNextPage();
@@ -52,8 +58,22 @@ const PlaylistPage: FC = () => {
     setPlaylistOpenState(!currentToggleState);
   };
 
+  let computedVideoAreaHeight: string | number = '100%';
+
+  if (isPlaylistOpen && innerHeight != null) {
+    computedVideoAreaHeight = innerHeight - 304;
+  }
+
   return (
     <>
+      <ReactPlayer
+        width={innerWidth ?? '100%'}
+        height={computedVideoAreaHeight}
+        controls
+        url={`${Config.youtube.baseUrl}${activeVideoId}`}
+        playing
+      />
+
       <Playlist
         playlist={playlistItems}
         isMoreItemsAvailable={nextPageToken !== ''}

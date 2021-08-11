@@ -29,13 +29,13 @@ const Playlist = memo<PlaylistProps>((props) => {
   const playlistScrollerDiv = useRef<HTMLDivElement|null>(null);
 
   const scrollHandler: UIEventHandler<HTMLDivElement> = (event): void => {
-    if (!isMoreItemsAvailable || isLoadingMoreItems || !innerWidth) {
+    if (!isMoreItemsAvailable || isLoadingMoreItems || !opened || !innerWidth) {
       return;
     }
 
     const target = (event.target as HTMLDivElement);
 
-    if (target.scrollWidth - innerWidth - target.scrollLeft < (innerWidth / 4)) {
+    if (target.scrollWidth - innerWidth - target.scrollLeft < (innerWidth / 2)) {
       onScrolledToEnd?.();
     }
   };
@@ -86,11 +86,12 @@ const Playlist = memo<PlaylistProps>((props) => {
 
   return (
     <div className={classNames(Styles.playlist, { [Styles.playlistOpened]: opened })}>
-      <PlaylistToggleButton
-        toggled={opened}
-        onClick={onTogglePlaylistButtonClicked}
-        className={Styles.toggleButtonWrapper}
-      />
+      <div className={Styles.toggleButtonWrapper}>
+        <PlaylistToggleButton
+          toggled={opened}
+          onClick={onTogglePlaylistButtonClicked}
+        />
+      </div>
 
       <div
         className={Styles.playlistItems}

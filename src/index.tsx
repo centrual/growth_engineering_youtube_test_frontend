@@ -10,18 +10,11 @@ import './assets/styles/fonts.css';
 import './assets/styles/colors.css';
 import './assets/styles/global.css';
 
-const rootElement = document.querySelector('#root');
-
-if (!rootElement) {
-  throw new Error('Failed to find the root element');
-}
-
-const root = ReactDOM.createRoot(rootElement);
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
