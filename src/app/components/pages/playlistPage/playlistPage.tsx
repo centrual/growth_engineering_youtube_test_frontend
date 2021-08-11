@@ -35,7 +35,7 @@ const PlaylistPage: FC = () => {
       setNextPageLoadState(false);
     } catch (e) {
       setNextPageLoadState(false);
-      history.push('/500');
+      history.push({ pathname: '/500' });
     }
   };
 

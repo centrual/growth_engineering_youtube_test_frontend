@@ -8,7 +8,7 @@ const Error500Page: FC = () => {
   const history = useHistory();
 
   const onButtonClicked = (): void => {
-    history.push('/');
+    history.push({ pathname: '/' });
   };
 
   return (

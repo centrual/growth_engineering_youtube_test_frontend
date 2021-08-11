@@ -8,7 +8,7 @@ import PlaylistPage from './components/pages/playlistPage/playlistPage';
 function App(): JSX.Element {
   return (
     <>
-      <BRouter forceRefresh>
+      <BRouter>
         <Switch>
           <Route exact path="/">
             <PlaylistPage />
