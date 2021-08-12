@@ -1,0 +1,34 @@
+.playlistItem {
+  width: 19rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 300ms ease-out;
+}
+
+.playlistItem:hover {
+  background: var(--color-soft-green);
+}
+
+.playlistItemActive {
+  background: var(--color-soft-green);
+}
+
+.playlistItemStatistics {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  padding: 0.5rem 0 0;
+}
+
+.playlistItemStatisticsLeft {
+  display: block;
+  flex: 1;
+}
+
+.playlistItemStatisticsRight {
+  display: block;
+  flex: 1;
+}

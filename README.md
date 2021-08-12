@@ -1,6 +1,106 @@
-# Getting Started with Create React App
+# Growth Engineering Youtube Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello Growth Engineering 🖐
+
+This project demonstrates the front end of the youtube test.
+
+---
+
+## Getting Started
+
+This project needs [Node.js](https://nodejs.org/en/) version 14 or 16.
+
+> I using [yarn package manager](https://yarnpkg.com/). If you don't want to use yarn please delete `yarn.lock` file before install command.
+
+We need to [Git](https://git-scm.com/downloads) to clone the repository.
+
+Lastly we need [personal access token on github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to clone the repository. `repo` scope is enough to clone this private repository. Please copy your generated personal access token in safe, we will use it in the next steps.
+
+If everything ready, let's start!
+
+Please clone the project from CLI tool ( terminal | command prompt | powershell etc. ):
+
+```
+git clone https://github.com/centrual/growth_engineering_youtube_test_frontend.git
+```
+
+> This command can ask your credentials. Please use your `Github username` as username and `personal access key` as password.
+
+Then you are ready to use this project!
+
+Install the dependencies with:
+
+`npm i` or `yarn install`
+
+then start the project with:
+
+`npm run start` or `yarn start`
+
+If web browser isn't automatically opened then open the web browser and go to `http://localhost:3000`.
+
+🎉 Wunderbar! 🎊
+
+You can use the application now...
+
+---
+
+## Deployment instructions
+
+If you want to see website on `dev.geyt.ml` then just push updated code to `dev` branch on git repository. Or if you want to see website on `geyt.ml` or `www.geyt.ml` then push updated code to `staging` branch on git repository.
+
+If you want to deploy the project elsewhere, build the project with `npm run build` or `yarn build` command then deploy content of `build` directory via FTP or another transfer tool.
+
+---
+
+## Used Packages for Production Mode
+
+1. [react-router-dom](https://github.com/ReactTraining/react-router) for application navigation.
+2. [react-image](https://github.com/mbrevda/react-image) for image replacement when image not available.
+3. [react-player](https://github.com/CookPete/react-player) to display videos from youtube.
+4. [moment-timezone](https://github.com/moment/moment-timezone/) to parse dates and times.
+5. [react-moment](https://github.com/headzoo/react-moment) to show formatted video upload date like "4 hours ago".
+6. [react-number-format](https://www.npmjs.com/package/react-number-format) to show formatted view count like "12.567 views".
+7. [lottie-react](https://github.com/Gamote/lottie-react) to show wonderfully animated images. Special thanks to [Lottie Files](https://www.lottiefiles.com/).
+8. [react-loader-spinner](https://github.com/mhnpd/react-loader-spinner) for nice loader animations.
+9. [classnames](https://github.com/JedWatson/classnames) to conditionally joining classNames together easily.
+10. [@centrual/geyt_api_client](https://github.com/centrual/growth_engineering_youtube_test_openapi/packages/930634) to query server. Generated via [openapi-generator](https://openapi-generator.tech/). It uses [axios](https://github.com/axios/axios) as http client.
+11. [axios](https://github.com/axios/axios) to intercept http responses.
+12. [react-toastify](https://github.com/fkhadra/react-toastify) to show shiny toast notifications.
+13. [rooks](https://github.com/imbhargav5/rooks) to get window width in react
+14. [Font Awesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) to show awesome 😎 icons:
+    1. @fortawesome/fontawesome-svg-core
+    2. @fortawesome/free-regular-svg-icons
+    3. @fortawesome/free-solid-svg-icons
+    4. @fortawesome/react-fontawesome
+
+Thanks to [undraw](https://undraw.co/illustrations) for blank canvas image.
+
+---
+
+## Fonts
+
+1. [Poppins](https://fonts.google.com/specimen/Poppins)
+
+---
+
+## Project Structure
+
+Because the API key sharing is insecure I split the project into 3 parts. This parts are:
+
+1. Frontend *
+2. [OpenAPI Declarations](https://github.com/centrual/growth_engineering_youtube_test_openapi)
+3. [Backend](https://github.com/centrual/growth_engineering_youtube_test_server)
+
+---
+
+## Used Technologies
+
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* CSS modules are used for the styling of components.
+* Atomic design methodology was used to keep the components in order.
+* [Storybook](https://storybook.js.org/) used for component documentation.
+
+I made very simple youtube playlist template with Adobe XD.
 
 ## Available Scripts
 
@@ -18,6 +118,14 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn storybook`
+
+Runs the storybook.\
+Open [http://localhost:6006](http://localhost:6006/) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any runtime errors on the browser.
 
 ### `yarn build`
 

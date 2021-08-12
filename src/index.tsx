@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom';
 import App from './app/app';
 import reportWebVitals from './reportWebVitals';
 
-const rootElement = document.querySelector('#root');
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-if (!rootElement) {
-  throw new Error('Failed to find the root element');
-}
+import './assets/styles/fonts.css';
+import './assets/styles/colors.css';
+import './assets/styles/global.css';
 
-const root = ReactDOM.createRoot(rootElement);
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
