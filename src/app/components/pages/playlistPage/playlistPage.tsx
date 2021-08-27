@@ -3,11 +3,11 @@ import React, {
 } from 'react';
 import { VideoInfo } from '@centrual/geyt_api_client';
 import { useHistory } from 'react-router-dom';
-import ReactPlayer from 'react-player/youtube';
 import { useWindowSize } from 'rooks';
 import Playlist from '../../organisms/playlist/playlist';
 import { YoutubeApi } from '../../../../services/apiService';
 import Config from '../../../../config';
+import ReactPlayerWrapper from '../../atoms/reactPlayerWrapper/reactPlayerWrapper';
 
 const PlaylistPage: FC = () => {
   const history = useHistory();
@@ -66,7 +66,7 @@ const PlaylistPage: FC = () => {
 
   return (
     <>
-      <ReactPlayer
+      <ReactPlayerWrapper
         width={innerWidth ?? '100%'}
         height={computedVideoAreaHeight}
         controls
