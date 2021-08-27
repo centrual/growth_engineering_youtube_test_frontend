@@ -41,12 +41,13 @@
                 "allowExpressions": true
             }
         ],
-        "max-len": ["warn", { "code": 120 }],
+        "max-len": ["warn", { "code": 260 }],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
         "import/prefer-default-export": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-props-no-spreading": "off"
     },
     "settings": {
         "import/resolver": {
